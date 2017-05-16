@@ -1,7 +1,5 @@
 Fonte: http://cnpq.br/dados_abertos/
 
-1 - Extrair os .7z
+1 - Executar make_dataset.py
 
-2 - Executar python process_xml.py
-
-3 - Será gerado o arquivo dataset.csv. Para carregá-lo, ver read_dataset() em process_xml.py
+2 - Carregar read_dataset.py e executar read_cnpq() para carregar o dataset em um dataframe
