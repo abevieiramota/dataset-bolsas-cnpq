@@ -3,21 +3,24 @@ import numpy as np
 from numpy import dtype
 import os
 
-cnpq_dtypes = {'ANO-PAGAMENTO': dtype('int64'),
+cnpq_dtypes = {'ANO-PAGAMENTO': 'category',
+ 'CODIGO-DO-PROCESSO': dtype('O'),
  'MODALIDADE-DO-PROCESSO-ID': dtype('int64'),
+ 'NATUREZA-JURIDICA-ID': dtype('int64'),
  'NOME-COMPLETO-ID': dtype('int64'),
  'NOME-CURSO-ID': dtype('int64'),
  'NOME-DA-AREA-DO-CONHECIMENTO-ID': dtype('int64'),
  'NOME-DA-ESPECIALIDADE-ID': dtype('int64'),
  'NOME-DA-SUB-AREA-DO-CONHECIMENTO-ID': dtype('int64'),
  'NOME-GRANDE-AREA-DO-CONHECIMENTO-ID': dtype('int64'),
+ 'NRO-ID-CNPQ': dtype('O'),
  'PAIS-INSTITUICAO-ID': dtype('int64'),
  'PAIS-NASCIMENTO-ID': dtype('int64'),
  'QUANTIDADE-BOLSA-ANO': dtype('float64'),
  'QUANTIDADE-MESES-PAGOS': dtype('float64'),
- 'SEXO': dtype('O'),
+ 'SEXO': 'category',
  'SIGLA-INSTITUICAO-ID': dtype('int64'),
- 'SIGLA-UF-INSTITUICAO': dtype('O'),
+ 'SIGLA-UF-INSTITUICAO': 'category',
  'TITULO-DO-PROCESSO-ID': dtype('int64'),
  'VALOR-PAGO': dtype('float64')}
 
