@@ -28,7 +28,10 @@ class BolsasCNPqExtractor:
             'SIGLA-INSTITUICAO',
             'SIGLA-UF-INSTITUICAO',
             'TITULO-DO-PROCESSO',
-            'VALOR-PAGO']
+            'VALOR-PAGO',
+            'NRO-ID-CNPQ',
+            'NATUREZA-JURIDICA',
+            'CODIGO-DO-PROCESSO']
 
     CAT_COLS = ['NOME-CURSO',
                 'NOME-DA-AREA-DO-CONHECIMENTO',
@@ -40,7 +43,8 @@ class BolsasCNPqExtractor:
                 'TITULO-DO-PROCESSO',
                 'SIGLA-INSTITUICAO',
                 'MODALIDADE-DO-PROCESSO',
-                'NOME-COMPLETO']
+                'NOME-COMPLETO',
+                'NATUREZA-JURIDICA']
 
     CAT_ID_COLS = [colname + "-ID" for colname in CAT_COLS]
 
