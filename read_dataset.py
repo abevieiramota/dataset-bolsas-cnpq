@@ -24,7 +24,9 @@ cnpq_dtypes = {'ANO-PAGAMENTO': 'category',
  'TITULO-DO-PROCESSO-ID': dtype('int64'),
  'VALOR-PAGO': dtype('float64')}
 
-def read_cnpq(basepath='.'):
+basepath = os.path.dirname(os.path.abspath(__file__))
+
+def read_cnpq(basepath=basepath):
 
     # leitura de arquivo .CSV
     cnpq = pd.read_csv(os.path.join(basepath, "dataset.csv"), 
